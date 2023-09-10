@@ -1,0 +1,275 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-logo">
+                Header Logo
+            </div>
+            <div class="nav-links">
+                <a href="#">Header link 1</a>
+                <a href="#">Header link 2</a>
+                <a href="#">Header link 3</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>This website is awesome</h1>
+                <p>This website has some subtext that goes here under the main title. 
+                    It's a smaller font and the color is lower contrast
+                </p>
+                <button>Sign Up</button>
+            </div>
+            <div class="hero-image">
+                <span>This is a placeholder for an image</span>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Some random information.</h2>
+            <div class="content-container">
+                <div class="content-items">
+                    <div class="content-image">
+                    </div>
+                    <p>This is some subtext under an illustration or image</p>
+                </div>
+                <div class="content-items">
+                    <div class="content-image">
+                    </div>
+                    <p>This is some subtext under an illustration or image</p>
+
+                </div><div class="content-items">
+                    <div class="content-image">
+                    </div>
+                    <p>This is some subtext under an illustration or image</p>
+
+                </div><div class="content-items">
+                    <div class="content-image">
+                    </div>
+                    <p>This is some subtext under an illustration or image</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="quote">
+            <div class="quote-box">
+                <p class="quote-text">
+                    This is an inspiring quote, or a testimonial from a 
+                    customer, Maybe it's just filling up space, or maybe
+                    people will actually read it. Who knows? All I know
+                    is that it looks nice.
+                </p>
+            <span class="quote-author">-Thor, the god of thunder</span>
+
+            </div>
+
+        </div>
+        <div class="signup">
+            <div class="signup-box">
+                <div class="signup-text">
+                    <h3>
+                        Call to action! It's time!
+                    </h3>
+                    <p>Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <button>Sign up</button>
+            </div>
+        </div>
+        <div class="footer">
+            <span>Copyright © The Odin Project 2021</span>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Navbar */
+    .navbar {
+        padding-top: 15px;
+        display: flex;
+        background-color: #1F2937;
+
+    }
+    .nav-logo {
+        margin-left: 100px;
+        font-size: 24px;
+        color: #F9FAF8;
+    }
+    .nav-links {
+        margin-left:auto;
+        margin-right:100px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .nav-links a {
+        color:#E5E7EB;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 24px;
+    }
+    /* Hero */
+    .hero {
+        background-color: #1F2937;
+        display: flex;
+        padding-top:50px;
+        padding-bottom: 50px;
+    }
+    .hero-text {
+        margin-left:100px;
+        width:300px;
+    }
+    .hero-text h1 {
+        margin-bottom: -15px;
+        font-size: 48px;
+        font-weight: bolder;
+        color:#F9FAF8;
+    }
+    .hero-text p {
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+    .hero-text button {
+        width: 80px;
+        height: 30px;
+        border-radius: 4px;
+        text-decoration: none;
+        border: none;
+        background-color: #3882F6;
+        color: #FFF;
+        font-size: bolder;
+    }
+    .hero-image {
+        display: flex;
+        margin-top:auto;
+        margin-bottom:auto;
+        margin-left:auto;
+        margin-right:100px;
+        width: 400px;
+        height: 175px;
+        background: gray;
+        color:lightgray
+    }
+    .hero-image span{
+        margin: auto;
+    }
+    /* Content */
+    .content {
+        padding-top:50px;
+        padding-bottom: 50px;
+        display:flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content h2 {
+        margin-bottom: 50px;
+    }
+    .content-container{
+        display:flex;
+    }
+    .content-items {
+        margin-left: 34px;
+    }
+    .content-items p {
+        width: 150px;
+        font-size: 10px;
+    }
+    .content-image {
+        height: 150px;
+        width: 150px;
+        border-color: #3882F6;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 12px;
+    }
+    /* quote */
+    .quote {
+        padding-top:50px;
+        padding-bottom:50px;
+        display:flex;
+        flex-direction: column;
+        background-color: #E5E7EB;
+
+    }
+    .quote-box {
+        align-self: center;
+        display:flex;
+        flex-direction: column;
+        width:580px;
+        font-size:36px;
+        font-style: italic;
+        font-weight: light;
+        color: #1F2937;
+    }
+    .quote-author{
+        font-size:medium;
+        align-self: end;
+        font-style: normal;
+        font-weight:bold
+        
+    }
+    /* signup */
+    .signup {
+        padding-bottom:50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .signup-box {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        width:800px;
+        height: 150px;
+        border-radius: 8px;
+        background-color: #3882F6;
+    }
+    .signup-text {
+        width:409px;
+        height: 100px;
+        margin-right: 100px;
+    }
+    .signup-text h3 {
+        color: #F9FAF8;
+    }
+    .signup-text p {
+        color: #E5E7EB;
+    }
+    .signup-box button {
+        width: 120px;
+        height: 30px;
+        border-radius: 4px;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        border-style: solid;
+        color: #FFF;
+        font-size: bolder;
+    }
+
+    /* footer */
+    .footer {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:#E5E7EB;
+        background-color: #1F2937;
+        height:50px;
+    }
+
+</style>
